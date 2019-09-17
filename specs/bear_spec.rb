@@ -2,7 +2,7 @@ require("minitest/autorun")
 require("minitest/rg")
 require_relative("../Bear")
 require_relative("../River")
-equire_relative("../Fish")
+require_relative("../Fish")
 
 class TestBear < MiniTest::Test
 
@@ -26,7 +26,7 @@ class TestBear < MiniTest::Test
   end
 
   def test_takes_fish_from_river
-    @bear.takes_fish(@fish, @river)
+    @bear.takes_fish(@fish1, @river)
     assert_equal(1, @bear.food_count())
     assert_equal(1, @river.number_of_fish())
   end

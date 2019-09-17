@@ -20,7 +20,8 @@ class TestRiver < MiniTest::Test
   end
 
   def test_remove_fish
-    assert_equal(1, @river.remove_fish(@fish1))
+    @river.remove_fish(@fish1)
+    assert_equal(1, @river.number_of_fish())
   end
 
 end
