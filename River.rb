@@ -11,4 +11,8 @@ def number_of_fish()
   return @fish.length()
 end
 
+def remove_fish(fish)
+  @fish.delete(fish)
+end
+
 end
