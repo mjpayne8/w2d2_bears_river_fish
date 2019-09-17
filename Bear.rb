@@ -18,4 +18,8 @@ class Bear
     p river.number_of_fish
   end
 
+  def roar()
+    return "Raawwwr"
+  end
+
 end
