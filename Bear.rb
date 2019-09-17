@@ -8,4 +8,8 @@ class Bear
     @stomach = []
   end
 
+  def food_count()
+    return @stomach.length()
+  end
+
 end

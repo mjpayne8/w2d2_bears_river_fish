@@ -16,4 +16,12 @@ class TestBear < MiniTest::Test
     assert_equal("Grizzly", @bear.type())
   end
 
+  def test_food_count
+    assert_equal(0, @bear.food_count())
+  end
+
+  # def test_takes_fish_from_river
+  #
+  # end
+
 end
